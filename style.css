@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    background-color: #f1e6db;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+html, body {
+    min-width: 500px;
+}
+
+/* NAVBAR
+-------------------------------------*/
+.navbar {
+    background-color: #fbf8f3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    margin-top: 0;
+    padding: 10px 0;
+}
+
+.navbar img {
+    margin-left: 30px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar li {
+    margin-right: 40px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #202806;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+}
+  
+.shoppingcart-icon img {
+    padding-right: 30px;
+}
+
+/* MAIN SECTION
+-------------------------------------*/
+.main-section {
+    height: 100vh;
+}
+
+.main-section {
+    background-blend-mode: multiply; 
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('./images/background-image5.jpg'); 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main-section img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.main-section h1 {
+    font-family: 'Over the Rainbow', cursive;
+    font-size: 3rem;
+    padding-top: 430px;
+    margin-top: 0;
+    margin-bottom: 5px;
+    margin-left: 18px;
+}
+
+@media (max-width: 730px) {
+    .main-section h1 {
+        font-size: 2.6rem;
+    }
+}
+
+@media (max-width: 650px) {
+    .main-section h1 {
+        font-size: 2.1rem;
+    }
+}
+
+@media (max-width: 550px) {
+    .main-section h1 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 420px) {
+    .main-section h1 {
+        font-size: 1.5rem;
+    }
+}
+
+.main-section p {
+    margin-left: 18px;
+    margin-bottom: 10px;
+}
+
+.heading h2 {
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: .1em;
+    padding-top: 20px;
+}
+
+.shop-now {
+    margin-left: 30px;
+}
+
+.shop-now-btn {
+    background-color: #202806; 
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    border-radius: 2px;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 18px;
+}
+
+.shop-now-btn a {
+    text-decoration: none;
+    color: #fbf8f3;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+
+.collection {
+    height: 60vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 0px; */
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 50px;
+    padding-top: 20px;
+}
+
+@media (max-width: 780px) {
+    .collection {
+        grid-template-columns: 1fr;
+    }
+    .item1 h2, .item2 h2, .item3 h2 {
+        margin-top: 50px !important;
+    }
+}
+
+.item1 h2,
+.item2 h2,
+.item3 h2 {
+    margin-top: 250px;
+}
+
+.item1 { 
+    /* grid-area: 1 / 1 / 2 / 2; */
+    background-blend-mode: multiply; 
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./images/ouija\ board\ earthy\ colors.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.item2 { 
+    /* grid-area: 1 / 2 / 2 / 3;  */
+    background-blend-mode: multiply; /* Lägg till multiply blend mode */
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./images/crystals\ and\ stones\ earthy\ colors.jpg'); /* Lägg till linear gradient för toning */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.item3 { 
+    /* grid-area: 1 / 3 / 2 / 4;  */
+    background-blend-mode: multiply; /* Lägg till multiply blend mode */
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./images/tarot-and-oracle-cards.jpeg.png'); /* Lägg till linear gradient för toning */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.collection h2 {
+    font-family: 'Lora', serif;
+    text-align: center;
+    color: #fbf8f3;
+    margin-bottom: 20px;
+}
+
+/* Button 
+-------------------------------------*/
+.view-btn {
+    background-color: #fbf8f3; 
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    border-radius: 2px;
+    border: none;
+    padding: 10px 20px;
+}
+
+.view-btn a {
+    text-decoration: none;
+    color: #202806;
+}
+
+/* FOOTER
+-------------------------------------*/
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    background-color: #fbf8f3;
+    padding-top: 30px;
+    padding-bottom: 80px;
+}
+    
+.customer-service { 
+    grid-area: 1 / 1 / 2 / 2; 
+    margin-left: 30px;
+}
+
+.customer-service ul {
+    list-style-type: none;
+    padding: 0;
+    line-height: 2em;
+}
+    
+.customer-service a {
+    text-decoration: none;
+    color: #202806;
+}
+        
+.newsletter { 
+    grid-area: 1 / 2 / 2 / 3; 
+}
+
+.newsletter h3,
+.customer-service h3 {
+    padding-bottom: 10px;
+}
+
+.newsletter p {
+    padding-bottom: 10px;
+}
+
+input {
+    padding: 7px;
+}
+
+.socials { 
+    grid-area: 2 / 2 / 3 / 3; 
+}
+
+.socials ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0px;
+    padding-top: 50px;
+}
+
+.socials li {
+    padding: 6px;
+}
+
+.socials img:hover {
+    opacity: 0.5;
+}
+
+.subscribe-btn {
+    background-color: #3a6867; 
+    color: #fbf8f3;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    border-radius: 2px;
+    border: none;
+    padding: 8px;
+    margin-left: 10px;
+}
+
+@media screen and (max-width:600px) {
+    .subscribe-btn {
+        margin-left: 0;
+        margin-top: 10px;
+    }   
+}
+
+.main-footer {
+    font-size: small;
+    text-align: center;
+}
